@@ -38,4 +38,10 @@ public class Planet {
         this.mass = mass;
     }
 
+    @Override
+    public String toString() {
+        return "Planet name: " + getName() + ", Planet radius: " + getRadius() + " km. Planet mass: " + getMass() +
+                " kg.";
+    }
+
 }
