@@ -38,6 +38,7 @@ public class Planet {
         this.mass = mass;
     }
 
+    // USING the toString method here to override - so that planet OBJECTS are written out in an understandable way!
     @Override
     public String toString() {
         return "Planet name: " + getName() + ", Planet radius: " + getRadius() + " km. Planet mass: " + getMass() +
