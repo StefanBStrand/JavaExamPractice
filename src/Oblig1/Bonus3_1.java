@@ -11,7 +11,7 @@ public class Bonus3_1 {
         // Remember to put SYSTEM.IN as the argument!
         Scanner scanner = new Scanner(System.in);
 
-        List<Planet> planets = new ArrayList<>();
+        //List<Planet> planets = new ArrayList<>();
 
         System.out.println("Name of planet to register: ");
         String registeredPLanet = scanner.nextLine();
@@ -22,8 +22,10 @@ public class Bonus3_1 {
         System.out.println("Enter mass of planet:");
         double registeredMass = scanner.nextDouble();
 
-        System.out.println("The planet " + registeredPLanet + "has a radius of " + registeredRadius + " km, and" +
+        System.out.println("The planet " + registeredPLanet + " has a radius of " + registeredRadius + " km, and" +
                 " a mass of " + registeredMass + " kg.");
+
+        scanner.close();
 
     }
 
