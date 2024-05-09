@@ -9,7 +9,7 @@ public class Video3_2 extends VisualMedia {
 
     // vairable is set to static to not be associated with each object created from this class - it belongs
     // to the class itself and now functions as a counter - to count each Video object that is created
-    private static int totalNumberOfVideos;// = 0; // needs to be initialized to a value! (STart value).
+    private static int totalNumberOfVideos = 0; // needs to be initialized to a value! (STart value).
     // "oppførsel" i oppgaveteksten hinter til STATIC - at den tilhører klassen og ikke et objekt.
 
     private static ArrayList<String> listOfTitles = new ArrayList<String>(); // Storing list of titles here which
@@ -45,7 +45,8 @@ public class Video3_2 extends VisualMedia {
         this.views = views;
     }
 
-    public void printTotalNumberOfVideos() {
+    public static void printTotalNumberOfVideos() { // STATIC because totalNumber of VIDEOS is associated
+        //With the class and not a specific object.
         System.out.println("The total number of videos created is " + totalNumberOfVideos);
     }
 

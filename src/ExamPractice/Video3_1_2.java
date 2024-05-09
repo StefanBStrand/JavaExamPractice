@@ -4,7 +4,7 @@ import java.nio.channels.Channel;
 
 public class Video3_1_2 extends VisualMedia {
 
-    private int views;
+    private static int views;
 
 
     public Video3_1_2(String title, double lengthInMinutes, Channel channel, int views) {
